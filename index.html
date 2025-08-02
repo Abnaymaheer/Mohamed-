@@ -1,0 +1,2301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed</title>
+
+  <!-- ✅ Font Awesome Link بدل script -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-...HASH..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ✅ Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2><i class="fas fa-gem"></i>Mohamed</h2>
+      <button id="closeSidebar"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="sidebar-menu">
+      <li><a href="#dashboard"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
+      <li><a href="#analytics"><i class="fas fa-chart-line"></i> <span>Analytics</span></a></li>
+      <li><a href="#messages"><i class="fas fa-envelope"></i> <span>Messages</span></a></li>
+      <li><a href="#settings"><i class="fas fa-cog"></i> <span>Settings</span></a></li>
+      <li><a href="#logout"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a></li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <button id="toggleSidebar" class="toggle-btn"><i class="fas fa-bars"></i></button>
+    <h1>Dashboard Content</h1>
+  </div>
+  
+  <!-- ✅ Navbar -->
+<header class="navbar">
+  <div class="navbar-left">
+    <h1>Dashboard</h1>
+  </div>
+  <div class="navbar-right">
+    <i class="fas fa-search" id="black"></i>
+    <i class="fas fa-bell" id="gold"></i>
+    <i class="fas fa-envelope" id="blue"></i>
+    <img src="profile" alt="Profile" class="profile-img" />
+  </div>
+</header>
+
+
+
+
+<!-- ✅ Cards Section -->
+<section class="cards-section">
+  <div class="card">
+    <i class="fas fa-users card-icon"></i>
+    <h3>Users</h3>
+    <p>12,430</p>
+  </div>
+  <div class="card">
+    <i class="fas fa-dollar-sign card-icon"></i>
+    <h3>Revenue</h3>
+    <p>$52,340</p>
+  </div>
+  <div class="card">
+    <i class="fas fa-chart-line card-icon"></i>
+    <h3>Performance</h3>
+    <p>89%</p>
+  </div>
+  <div class="card">
+    <i class="fas fa-box-open card-icon"></i>
+    <h3>Products</h3>
+    <p>320</p>
+  </div>
+  <div class="card">
+    <i class="fas fa-user-plus card-icon"></i>
+    <h3>New Users</h3>
+    <p>1,234</p>
+  </div>
+  <div class="card">
+    <i class="fas fa-comments card-icon"></i>
+    <h3>Feedback</h3>
+    <p>324</p>
+  </div>
+  <div class="card">
+    <i class="fas fa-globe card-icon"></i>
+    <h3>Visits</h3>
+    <p>54K</p>
+  </div>
+  <div class="card">
+    <i class="fas fa-shipping-fast card-icon"></i>
+    <h3>Orders</h3>
+    <p>2,650</p>
+  </div>
+</section>
+
+
+<!-- ✅ Recent Activity Section -->
+<section class="recent-activity">
+  <h2 class="section-title">Recent Activity</h2>
+  <ul class="activity-list">
+    <li>
+      <i class="fas fa-user-plus icon green"></i>
+      <span><strong>Sarah</strong> joined the platform</span>
+      <time>2 mins ago</time>
+    </li>
+    <li>
+      <i class="fas fa-box icon blue"></i>
+      <span><strong>Order #1234</strong> was placed</span>
+      <time>10 mins ago</time>
+    </li>
+    <li>
+      <i class="fas fa-comment icon purple"></i>
+      <span><strong>Mike</strong> left a review</span>
+      <time>30 mins ago</time>
+    </li>
+    <li>
+      <i class="fas fa-sign-out-alt icon red"></i>
+      <span><strong>Anna</strong> logged out</span>
+      <time>1 hour ago</time>
+    </li>
+  </ul>
+</section>
+
+
+
+<!-- ✅ Team Members Section (6 بطاقات) -->
+<section class="team-section">
+  <h2 class="section-title">Team Members</h2>
+  <div class="team-grid">
+    <div class="team-card">
+      <img src="man1" alt="Team Member">
+      <h3>Mohamed Amine</h3>
+      <p>Project Manager</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    
+    <div class="team-card">
+      <img src="girl1" alt="Team Member">
+      <h3>Fatima Zahra</h3>
+      <p>UI/UX Designer</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    
+    <div class="team-card">
+      <img src="man2" alt="Team Member">
+      <h3>Youssef T.</h3>
+      <p>Frontend Dev</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    
+    <div class="team-card">
+      <img src="man3" alt="Team Member">
+      <h3>Omar N.</h3>
+      <p>Backend Dev</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    
+    <div class="team-card">
+      <img src="girl2" alt="Team Member">
+      <h3>Amal K.</h3>
+      <p>Product Owner</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    
+    <div class="team-card">
+      <img src="man4" alt="Team Member">
+      <h3>Mazen B.</h3>
+      <p>QA Engineer</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ✅ Projects Table Section -->
+<section class="projects-section">
+  <h2 class="section-title">Projects Overview</h2>
+  <div class="table-wrapper">
+    <table class="projects-table">
+      <thead>
+        <tr>
+          <th>Project</th>
+          <th>Status</th>
+          <th>Team</th>
+          <th>Progress</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dashboard Redesign</td>
+          <td><span class="status in-progress">In Progress</span></td>
+          <td>Mohamed, Fatima</td>
+          <td>60%</td>
+          <td><button class="btn-view"><i class="fas fa-eye"></i></button></td>
+        </tr>
+        <tr>
+          <td>Landing Page</td>
+          <td><span class="status completed">Completed</span></td>
+          <td>Youssef, Amal</td>
+          <td>100%</td>
+          <td><button class="btn-view"><i class="fas fa-eye"></i></button></td>
+        </tr>
+        <tr>
+          <td>Mobile App</td>
+          <td><span class="status pending">Pending</span></td>
+          <td>Omar, Salma</td>
+          <td>25%</td>
+          <td><button class="btn-view"><i class="fas fa-eye"></i></button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+
+
+
+  
+  
+  
+  
+  <!-- ✅ Statistics Chart Section -->
+<section class="statistics-chart-section">
+  <h2 class="section-title">Sales Statistics</h2>
+  <div class="chart-container">
+    <canvas id="salesChart"></canvas>
+  </div>
+</section>
+  
+  
+  <!-- ✅ Earnings Section -->
+<section class="earnings-section">
+  <h2 class="section-title">Earnings Overview</h2>
+  <div class="earnings-grid">
+    <div class="earnings-card">
+      <h3>$12,500</h3>
+      <p>Monthly Earnings</p>
+      <span class="positive">+15%</span>
+    </div>
+    
+    <div class="earnings-card">
+      <h3>$95,000</h3>
+      <p>Annual Earnings</p>
+      <span class="positive">+22%</span>
+    </div>
+    
+    <div class="earnings-card">
+      <h3>$83,000</h3>
+      <p>Last Year</p>
+      <span class="neutral">—</span>
+    </div>
+    
+    <div class="earnings-card">
+      <h3>$18,200</h3>
+      <p>Operational Costs</p>
+      <span class="negative">-5%</span>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ✅ Performance Overview Section -->
+<section class="performance-section">
+  <h2 class="section-title">Performance Overview</h2>
+  <div class="performance-grid">
+    
+    <div class="performance-card">
+      <h3>Servers</h3>
+      <p>Status: <span class="status good">Good</span></p>
+      <div class="progress-bar"><span style="width: 95%; background: green;"></span></div>
+    </div>
+    
+    <div class="performance-card">
+      <h3>Database</h3>
+      <p>Status: <span class="status excellent">Excellent</span></p>
+      <div class="progress-bar"><span style="width: 100%; background: #007bff;"></span></div>
+    </div>
+    
+    <div class="performance-card">
+      <h3>Email Service</h3>
+      <p>Status: <span class="status warning">Unstable</span></p>
+      <div class="progress-bar"><span style="width: 60%; background: orange;"></span></div>
+    </div>
+    
+    <div class="performance-card">
+      <h3>Security</h3>
+      <p>Status: <span class="status bad">Poor</span></p>
+      <div class="progress-bar"><span style="width: 45%; background: red;"></span></div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+<!-- ✅ Task Progress Section -->
+<section class="task-section">
+  <h2 class="section-title">Task Progress</h2>
+  <div class="task-list">
+    
+    <div class="task-item">
+      <p>Design Homepage <span class="status completed">Completed</span></p>
+      <div class="progress-bar"><span style="width: 100%; background: green;"></span></div>
+    </div>
+    
+    <div class="task-item">
+      <p>Create Dashboard UI <span class="status in-progress">In Progress</span></p>
+      <div class="progress-bar"><span style="width: 75%; background: orange;"></span></div>
+    </div>
+    
+    <div class="task-item">
+      <p>Integrate APIs <span class="status pending">Pending</span></p>
+      <div class="progress-bar"><span style="width: 40%; background: #007bff;"></span></div>
+    </div>
+    
+    <div class="task-item">
+      <p>Testing <span class="status waiting">Waiting</span></p>
+      <div class="progress-bar"><span style="width: 20%; background: red;"></span></div>
+    </div>
+    
+  </div>
+</section>
+  
+  
+  
+  
+  <!-- ✅ Messages Inbox with Icons -->
+<section class="messages-section">
+  <h2 class="section-title">Messages Inbox</h2>
+  <div class="message-list">
+    
+    <div class="message unread">
+      <i class="fas fa-envelope-open-text icon"></i>
+      <div class="message-content">
+        <h4><i class="fas fa-user"></i> Laila Hussein</h4>
+        <p><i class="fas fa-comment-alt"></i> Hi, can we schedule a quick call tomorrow?</p>
+      </div>
+      <span class="message-date"><i class="fas fa-clock"></i> Today</span>
+    </div>
+    
+    <div class="message">
+      <i class="fas fa-paper-plane icon"></i>
+      <div class="message-content">
+        <h4><i class="fas fa-user"></i> Youssef Karim</h4>
+        <p><i class="fas fa-comment-dots"></i> Don’t forget to review the report I sent.</p>
+      </div>
+      <span class="message-date"><i class="fas fa-calendar-day"></i> Yesterday</span>
+    </div>
+    
+    <div class="message unread">
+      <i class="fas fa-inbox icon"></i>
+      <div class="message-content">
+        <h4><i class="fas fa-user"></i> Amine Bakkali</h4>
+        <p><i class="fas fa-smile-beam"></i> Great work on the last update! 👏</p>
+      </div>
+      <span class="message-date"><i class="fas fa-clock"></i> 2 days ago</span>
+    </div>
+    
+  </div>
+</section>
+
+
+
+<!-- ✅ System Notifications Section -->
+<section class="notifications-section">
+  <h2 class="section-title">System Notifications</h2>
+  <div class="notifications-list">
+    
+    <div class="notification info">
+      <i class="fas fa-info-circle"></i>
+      <p>System updated successfully.</p>
+      <span class="date">Just now</span>
+    </div>
+    
+    <div class="notification success">
+      <i class="fas fa-check-circle"></i>
+      <p>User “admin” logged in from new device.</p>
+      <span class="date">5 mins ago</span>
+    </div>
+    
+    <div class="notification warning">
+      <i class="fas fa-exclamation-triangle"></i>
+      <p>Storage space is almost full.</p>
+      <span class="date">30 mins ago</span>
+    </div>
+    
+    <div class="notification danger">
+      <i class="fas fa-times-circle"></i>
+      <p>Unauthorized access attempt blocked!</p>
+      <span class="date">1 hour ago</span>
+    </div>
+    
+  </div>
+</section>
+
+
+<!-- ✅ Files Manager Section -->
+<section class="files-section">
+  <h2 class="section-title">Files Manager</h2>
+  <div class="files-grid">
+    
+    <div class="file-card">
+      <i class="fas fa-file-pdf file-icon pdf"></i>
+      <h4>report-q2.pdf</h4>
+      <p>Size: 1.2MB</p>
+      <span>Uploaded: 2 days ago</span>
+    </div>
+    
+    <div class="file-card">
+      <i class="fas fa-image file-icon image"></i>
+      <h4>team-photo.jpg</h4>
+      <p>Size: 850KB</p>
+      <span>Uploaded: Yesterday</span>
+    </div>
+    
+    <div class="file-card">
+      <i class="fas fa-video file-icon video"></i>
+      <h4>meeting.mp4</h4>
+      <p>Size: 12.4MB</p>
+      <span>Uploaded: Today</span>
+    </div>
+    
+    <div class="file-card">
+      <i class="fas fa-file-excel file-icon excel"></i>
+      <h4>budget-2025.xlsx</h4>
+      <p>Size: 670KB</p>
+      <span>Uploaded: Just now</span>
+    </div>
+    
+  </div>
+</section>
+
+
+
+<!-- ✅ Project Timeline Section -->
+<section class="timeline-section">
+  <h2 class="section-title">Project Timeline</h2>
+  <div class="timeline">
+    
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-play"></i></div>
+      <div class="timeline-content">
+        <h4>Project Started</h4>
+        <p>Initial planning and setup completed.</p>
+        <span>Jan 5, 2025</span>
+      </div>
+    </div>
+    
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-pencil-alt"></i></div>
+      <div class="timeline-content">
+        <h4>Design Phase</h4>
+        <p>Wireframes and UI design created.</p>
+        <span>Feb 2, 2025</span>
+      </div>
+    </div>
+    
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-code"></i></div>
+      <div class="timeline-content">
+        <h4>Development</h4>
+        <p>Main features coded and integrated.</p>
+        <span>Mar 15, 2025</span>
+      </div>
+    </div>
+    
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-flag-checkered"></i></div>
+      <div class="timeline-content">
+        <h4>Project Completed</h4>
+        <p>Final testing and delivery to client.</p>
+        <span>Apr 28, 2025</span>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<!-- ✅ Settings Panel Section -->
+<section class="settings-section">
+  <h2 class="section-title">Settings</h2>
+  <div class="settings-grid">
+    
+    <div class="setting-item">
+      <div class="setting-icon"><i class="fas fa-bell"></i></div>
+      <div class="setting-info">
+        <h4>Notifications</h4>
+        <p>Receive alerts and updates</p>
+      </div>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
+    </div>
+    
+    <div class="setting-item">
+      <div class="setting-icon"><i class="fas fa-moon"></i></div>
+      <div class="setting-info">
+        <h4>Dark Mode</h4>
+        <p>Enable dark interface</p>
+      </div>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+    
+    <div class="setting-item">
+      <div class="setting-icon"><i class="fas fa-lock"></i></div>
+      <div class="setting-info">
+        <h4>Privacy</h4>
+        <p>Control your data visibility</p>
+      </div>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<!-- ✅ Orders Table Section -->
+<section class="section orders-section">
+  <h2 class="section-title">Recent Orders</h2>
+  <div class="orders-wrapper">
+    <div class="table-container">
+      <table class="orders-table">
+        <thead>
+          <tr>
+            <th><i class="fas fa-hashtag"></i></th>
+            <th><i class="fas fa-user"></i> Client</th>
+            <th><i class="fas fa-box"></i> Product</th>
+            <th><i class="fas fa-info-circle"></i> Status</th>
+            <th><i class="fas fa-dollar-sign"></i> Amount</th>
+            <th><i class="fas fa-calendar-alt"></i> Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>Sarah</td>
+            <td>Headphones</td>
+            <td><span class="status delivered">Delivered</span></td>
+            <td>$120</td>
+            <td>2025-07-20</td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>Mohamed</td>
+            <td>Laptop</td>
+            <td><span class="status pending">Pending</span></td>
+            <td>$850</td>
+            <td>2025-07-19</td>
+          </tr>
+          <tr>
+            <td>003</td>
+            <td>Layla</td>
+            <td>Camera</td>
+            <td><span class="status canceled">Canceled</span></td>
+            <td>$320</td>
+            <td>2025-07-17</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- ✅ User Feedback Section -->
+<section class="section feedback-section">
+  <h2 class="section-title"><i class="fas fa-comments"></i> User Feedback</h2>
+  <div class="feedback-grid">
+    <div class="feedback-card">
+      <p class="feedback-text">
+        <i class="fas fa-quote-left"></i> This dashboard is incredibly easy to use and has improved our workflow significantly!
+      </p>
+      <div class="feedback-user">
+        <i class="fas fa-user-circle"></i>
+        <span>Sarah Ahmed</span>
+      </div>
+    </div>
+    <div class="feedback-card">
+      <p class="feedback-text">
+        <i class="fas fa-quote-left"></i> I love the clean design and responsive layout. Works perfectly on all my devices.
+      </p>
+      <div class="feedback-user">
+        <i class="fas fa-user-circle"></i>
+        <span>Mohamed L.</span>
+      </div>
+    </div>
+    <div class="feedback-card">
+      <p class="feedback-text">
+        <i class="fas fa-quote-left"></i> Amazing support and features. It’s definitely worth the investment.
+      </p>
+      <div class="feedback-user">
+        <i class="fas fa-user-circle"></i>
+        <span>Layla N.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section user-insights">
+  <h2 class="section-title"><i class="fas fa-info-circle"></i> User Insights</h2>
+  
+  <div class="section-boxes-grid">
+    
+    <!-- ✅ Box 1 -->
+    <div class="section-box">
+      <div class="icon-avatar"><i class="fas fa-user-check"></i></div>
+      <h3>Account Status</h3>
+      <p><i class="fas fa-user-tag"></i> Role: Moderator</p>
+      <p><i class="fas fa-calendar-check"></i> Joined: Feb 20, 2024</p>
+      <p><i class="fas fa-check-circle"></i> Verified: Yes</p>
+    </div>
+    
+    <!-- ✅ Box 2 -->
+    <div class="section-box">
+      <div class="icon-avatar"><i class="fas fa-chart-pie"></i></div>
+      <h3>Usage Stats</h3>
+      <p><i class="fas fa-tasks"></i> Completed: 18</p>
+      <p><i class="fas fa-spinner"></i> In Progress: 5</p>
+      <p><i class="fas fa-clock"></i> Active Time: 7h/week</p>
+    </div>
+    
+    <!-- ✅ Box 3 -->
+    <div class="section-box">
+      <div class="icon-avatar"><i class="fas fa-shield-alt"></i></div>
+      <h3>Security</h3>
+      <p><i class="fas fa-lock"></i> 2FA: Enabled</p>
+      <p><i class="fas fa-key"></i> Last Password Change: 3 weeks ago</p>
+      <p><i class="fas fa-exclamation-triangle"></i> Alerts: None</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section user-analytics">
+  <h2 class="section-title"><i class="fas fa-chart-line"></i> User Analytics</h2>
+  
+  <div class="section-boxes-grid">
+    
+    <!-- ✅ Box 1 -->
+    <div class="section-box">
+      <div class="icon-avatar"><i class="fas fa-sign-in-alt"></i></div>
+      <h3>Logins</h3>
+      <p><i class="fas fa-calendar-week"></i> This Week: 14</p>
+      <p><i class="fas fa-calendar-day"></i> Today: 3</p>
+      <p><i class="fas fa-clock"></i> Avg. Time: 12 min</p>
+    </div>
+    
+    <!-- ✅ Box 2 -->
+    <div class="section-box">
+      <div class="icon-avatar"><i class="fas fa-eye"></i></div>
+      <h3>Most Viewed</h3>
+      <p><i class="fas fa-home"></i> Home Page</p>
+      <p><i class="fas fa-box"></i> Product Dashboard</p>
+      <p><i class="fas fa-cogs"></i> Settings</p>
+    </div>
+    
+    <!-- ✅ Box 3 -->
+    <div class="section-box">
+      <div class="icon-avatar"><i class="fas fa-chart-bar"></i></div>
+      <h3>Session Stats</h3>
+      <p><i class="fas fa-user-clock"></i> Avg. Session: 8 min</p>
+      <p><i class="fas fa-history"></i> Total Sessions: 56</p>
+      <p><i class="fas fa-calendar-alt"></i> Last Session: 2h ago</p>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<section class="section date-filter">
+  <h2 class="section-title"><i class="fas fa-calendar-alt"></i> Custom Date Filtering</h2>
+  
+  <div class="filter-box">
+    <div class="date-inputs">
+      <div class="input-group">
+        <label for="from-date"><i class="fas fa-arrow-left"></i> From</label>
+        <input type="date" id="from-date">
+      </div>
+      <div class="input-group">
+        <label for="to-date"><i class="fas fa-arrow-right"></i> To</label>
+        <input type="date" id="to-date">
+      </div>
+    </div>
+    <button class="apply-btn"><i class="fas fa-filter"></i> Apply Filter</button>
+  </div>
+  
+  <div class="filter-results">
+    <p><i class="fas fa-chart-line"></i> Filtered data will appear here based on selected date range.</p>
+  </div>
+</section>
+
+
+
+
+<section class="section user-devices">
+  <h2 class="section-title"><i class="fas fa-laptop"></i> User Devices</h2>
+  
+  <div class="section-boxes-grid">
+    
+    <!-- ✅ Box 1 -->
+    <div class="section-box">
+      <div class="icon-avatar"><i class="fas fa-desktop"></i></div>
+      <h3>Windows 11</h3>
+      <p><i class="fas fa-browser"></i> Chrome 114</p>
+      <p><i class="fas fa-map-marker-alt"></i> Casablanca, MA</p>
+      <p><i class="fas fa-clock"></i> Last Used: 1h ago</p>
+    </div>
+    
+    <!-- ✅ Box 2 -->
+    <div class="section-box">
+      <div class="icon-avatar"><i class="fas fa-mobile-alt"></i></div>
+      <h3>Android 13</h3>
+      <p><i class="fas fa-browser"></i> Firefox</p>
+      <p><i class="fas fa-map-marker-alt"></i> Marrakech, MA</p>
+      <p><i class="fas fa-clock"></i> Last Used: 3 days ago</p>
+    </div>
+    
+    <!-- ✅ Box 3 -->
+    <div class="section-box">
+      <div class="icon-avatar"><i class="fas fa-tablet-alt"></i></div>
+      <h3>iPadOS 17</h3>
+      <p><i class="fas fa-browser"></i> Safari</p>
+      <p><i class="fas fa-map-marker-alt"></i> Rabat, MA</p>
+      <p><i class="fas fa-clock"></i> Last Used: 2 weeks ago</p>
+    </div>
+    
+  </div>
+</section>
+
+
+
+<section class="section project-details">
+  <h2 class="section-title"><i class="fas fa-folder-open"></i> Project Details</h2>
+
+  <div class="section-boxes-grid">
+
+    <!-- ✅ Card 1 -->
+    <div class="section-box">
+      <h3><i class="fas fa-diagram-project"></i> Dashboard Redesign</h3>
+      <p><i class="fas fa-tasks"></i> 12 / 20 Tasks</p>
+      <p><i class="fas fa-users"></i> Team: Mohamed, Lina</p>
+      <p><i class="fas fa-calendar-alt"></i> Deadline: 30 Aug 2025</p>
+      <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+    </div>
+
+    <!-- ✅ Card 2 -->
+    <div class="section-box">
+      <h3><i class="fas fa-chart-pie"></i> Analytics System</h3>
+      <p><i class="fas fa-tasks"></i> 8 / 10 Tasks</p>
+      <p><i class="fas fa-users"></i> Team: Sara, Youssef</p>
+      <p><i class="fas fa-calendar-alt"></i> Deadline: 15 Sep 2025</p>
+      <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+    </div>
+
+    <!-- ✅ Card 3 -->
+    <div class="section-box">
+      <h3><i class="fas fa-mobile-alt"></i> Mobile App</h3>
+      <p><i class="fas fa-tasks"></i> 5 / 25 Tasks</p>
+      <p><i class="fas fa-users"></i> Team: Amine, Hiba</p>
+      <p><i class="fas fa-calendar-alt"></i> Deadline: 20 Oct 2025</p>
+      <div class="progress-bar"><div class="progress" style="width: 20%;"></div></div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section chat-system">
+  <h3><i class="fas fa-comments"></i> Chat System</h3>
+  <div class="chat-box">
+    
+    <!-- رسالة واردة -->
+    <div class="chat-message received">
+      <div class="avatar"><i class="fas fa-user-circle"></i></div>
+      <div class="message-content">
+        <p>Hello, I need help with my order.</p>
+        <span class="timestamp">10:15 AM</span>
+      </div>
+    </div>
+    
+    <!-- رسالة صادرة -->
+    <div class="chat-message sent">
+      <div class="avatar"><i class="fas fa-user-shield"></i></div>
+      <div class="message-content">
+        <p>Sure! Can you give me your order ID?</p>
+        <span class="timestamp">10:17 AM</span>
+      </div>
+    </div>
+    
+    <!-- المزيد من الرسائل -->
+  </div>
+</section>
+
+
+
+
+<section class="section revenue-overview">
+  <h3><i class="fas fa-chart-line"></i> Revenue Overview</h3>
+  
+  <div class="revenue-cards">
+    <div class="revenue-card">
+      <i class="fas fa-dollar-sign icon"></i>
+      <div>
+        <h4>Today</h4>
+        <p>$1,250</p>
+      </div>
+    </div>
+    <div class="revenue-card">
+      <i class="fas fa-calendar-week icon"></i>
+      <div>
+        <h4>This Week</h4>
+        <p>$7,850</p>
+      </div>
+    </div>
+    <div class="revenue-card">
+      <i class="fas fa-calendar-alt icon"></i>
+      <div>
+        <h4>This Month</h4>
+        <p>$32,400</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Goals / Targets Tracker Section -->
+<section class="goals-section">
+  <h2 class="section-title">🎯 Goals / Targets Tracker</h2>
+  <div class="goals-container">
+    
+    <div class="goal-card">
+      <div class="goal-header">
+        <i class="fas fa-chart-line goal-icon"></i>
+        <h3>Increase Sales</h3>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 75%;"></div>
+      </div>
+      <p>75% Completed</p>
+    </div>
+    
+    <div class="goal-card">
+      <div class="goal-header">
+        <i class="fas fa-user-plus goal-icon"></i>
+        <h3>New Customers</h3>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 40%;"></div>
+      </div>
+      <p>40% Completed</p>
+    </div>
+    
+    <div class="goal-card">
+      <div class="goal-header">
+        <i class="fas fa-globe goal-icon"></i>
+        <h3>Website Traffic</h3>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 60%;"></div>
+      </div>
+      <p>60% Completed</p>
+    </div>
+    
+  </div>
+</section>
+<section class="webhooks-section">
+  <h2 class="section-title">🔗 Webhooks</h2>
+  <div class="webhooks-list">
+    <div class="webhook-item">
+      <div class="webhook-info">
+        <h3>Order Created</h3>
+        <p>https://example.com/api/order-created</p>
+      </div>
+      <div class="webhook-status">
+        <span class="status active"><i class="fas fa-check-circle"></i> Active</span>
+        <button class="btn-edit"><i class="fas fa-pen"></i> Edit</button>
+      </div>
+    </div>
+    
+    <div class="webhook-item">
+      <div class="webhook-info">
+        <h3>User Registered</h3>
+        <p>https://example.com/api/user-registered</p>
+      </div>
+      <div class="webhook-status">
+        <span class="status inactive"><i class="fas fa-times-circle"></i> Inactive</span>
+        <button class="btn-edit"><i class="fas fa-pen"></i> Edit</button>
+      </div>
+    </div>
+    
+    <div class="webhook-item">
+      <div class="webhook-info">
+        <h3>Payment Processed</h3>
+        <p>https://example.com/api/payment-processed</p>
+      </div>
+      <div class="webhook-status">
+        <span class="status active"><i class="fas fa-check-circle"></i> Active</span>
+        <button class="btn-edit"><i class="fas fa-pen"></i> Edit</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="security-alerts">
+  <h2 class="section-title">🛡️ Security Alerts</h2>
+  <div class="alerts-container">
+    <div class="alert-card warning">
+      <i class="fas fa-exclamation-triangle"></i>
+      <div class="alert-content">
+        <h3>Unusual Login</h3>
+        <p>Login attempt from a new location was blocked.</p>
+        <span class="time">10 mins ago</span>
+      </div>
+    </div>
+    
+    <div class="alert-card danger">
+      <i class="fas fa-shield-alt"></i>
+      <div class="alert-content">
+        <h3>Password Change Needed</h3>
+        <p>Your password is expiring soon. Update it now.</p>
+        <span class="time">1 hour ago</span>
+      </div>
+    </div>
+    
+    <div class="alert-card info">
+      <i class="fas fa-info-circle"></i>
+      <div class="alert-content">
+        <h3>New Device Logged In</h3>
+        <p>Your account was accessed from a new device.</p>
+        <span class="time">Yesterday</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="todo-section" id="todo">
+  <h2 class="section-title"><i class="fas fa-list-check"></i> To-Do List</h2>
+  <div class="todo-container">
+    <div class="todo-form">
+      <input type="text" id="todo-input" placeholder="Add a new task..." />
+      <button id="add-btn"><i class="fas fa-plus"></i></button>
+    </div>
+    <ul class="todo-list" id="todo-list"></ul>
+  </div>
+</section>
+
+
+<section class="login-section">
+  <div class="login-container">
+    <h2 class="login-title">Welcome Back</h2>
+    <p class="login-subtitle">Please login to continue</p>
+    
+    <form class="login-form">
+      <input type="email" placeholder="Email Address" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+    
+    <div class="or">OR</div>
+    
+    <div class="social-login">
+      <button class="google-btn"><i class="fab fa-google"></i> Sign in with Google</button>
+      <button class="apple-btn"><i class="fab fa-apple"></i> Sign in with Apple</button>
+    </div>
+  </div>
+</section>
+
+
+<section class="add-client-section">
+  <h2 class="section-title">Add New Client</h2>
+  <form class="add-client-form">
+    <div class="form-group">
+      <label for="client-name">Client Name</label>
+      <input type="text" id="client-name" placeholder="Enter client's full name" required />
+    </div>
+    
+    <div class="form-group">
+      <label for="client-email">Email</label>
+      <input type="email" id="client-email" placeholder="Enter client's email" required />
+    </div>
+    
+    <div class="form-group">
+      <label for="client-phone">Phone Number</label>
+      <input type="tel" id="client-phone" placeholder="Enter phone number" />
+    </div>
+    
+    <div class="form-group">
+      <label for="client-company">Company</label>
+      <input type="text" id="client-company" placeholder="Company name (optional)" />
+    </div>
+    
+    <button type="submit" class="submit-btn">Add Client</button>
+  </form>
+</section>
+<section class="clients-section">
+  <h2 class="section-title">Clients List</h2>
+  
+  <input type="text" id="searchClient" placeholder="Search by name..." />
+  
+  <div class="clients-list" id="clientsList"></div>
+</section>
+
+
+<section class="project-notes-section">
+  <h2 class="section-title">Project Notes</h2>
+  <textarea id="projectNotes" placeholder="Write your project notes here..."></textarea>
+</section>
+
+
+<section class="project-deadlines">
+  <h2><i class="fas fa-calendar-alt"></i> Project Deadlines</h2>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th><i class="fas fa-folder"></i> Project</th>
+          <th><i class="fas fa-clock"></i> Deadline</th>
+          <th><i class="fas fa-bell"></i> Status</th>
+          <th><i class="fas fa-trash-alt"></i> Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><i class="fas fa-laptop-code icon-left"></i> Website Redesign</td>
+          <td>2025-08-10</td>
+          <td><span class="status soon"><i class="fas fa-hourglass-half icon-left"></i> Soon</span></td>
+          <td><button class="delete-btn"><i class="fas fa-trash-alt"></i></button></td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-mobile-alt icon-left"></i> Mobile App Launch</td>
+          <td>2025-09-01</td>
+          <td><span class="status far"><i class="fas fa-calendar-check icon-left"></i> Far</span></td>
+          <td><button class="delete-btn"><i class="fas fa-trash-alt"></i></button></td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-file-alt icon-left"></i> Client Report</td>
+          <td>2025-07-30</td>
+          <td><span class="status overdue"><i class="fas fa-exclamation-triangle icon-left"></i> Overdue</span></td>
+          <td><button class="delete-btn"><i class="fas fa-trash-alt"></i></button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+<section class="performance-reviews">
+  <h2><i class="fas fa-star"></i> Performance Reviews</h2>
+  <div class="reviews-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th><i class="fas fa-user"></i> Employee</th>
+          <th><i class="fas fa-calendar-check"></i> Review Date</th>
+          <th><i class="fas fa-tasks"></i> Rating</th>
+          <th><i class="fas fa-comments"></i> Comments</th>
+          <th><i class="fas fa-trash-alt"></i> Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><i class="fas fa-user-circle icon-left"></i> John Doe</td>
+          <td>2025-07-20</td>
+          <td>
+            <span class="rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+            </span>
+          </td>
+          <td>Great team player with consistent results.</td>
+          <td><button class="delete-btn"><i class="fas fa-trash-alt"></i></button></td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-user-circle icon-left"></i> Jane Smith</td>
+          <td>2025-06-15</td>
+          <td>
+            <span class="rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+            </span>
+          </td>
+          <td>Good communication but needs improvement in deadlines.</td>
+          <td><button class="delete-btn"><i class="fas fa-trash-alt"></i></button></td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-user-circle icon-left"></i> Mark Johnson</td>
+          <td>2025-07-01</td>
+          <td>
+            <span class="rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+            </span>
+          </td>
+          <td>Shows potential but inconsistent performance.</td>
+          <td><button class="delete-btn"><i class="fas fa-trash-alt"></i></button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+<section class="file-uploads">
+  <h2><i class="fas fa-upload"></i> File Uploads</h2>
+  
+  <form class="upload-form">
+    <label for="fileInput">
+      <i class="fas fa-cloud-upload-alt"></i> Choose a file
+    </label>
+    <input type="file" id="fileInput" />
+    <button type="submit"><i class="fas fa-paper-plane"></i> Upload</button>
+  </form>
+  
+  <div class="uploaded-files">
+    <h3><i class="fas fa-file-alt"></i> Uploaded Files</h3>
+    <ul>
+      <li>
+        <i class="fas fa-file-pdf icon-left"></i> report.pdf
+        <button class="delete-btn"><i class="fas fa-trash-alt"></i></button>
+      </li>
+      <li>
+        <i class="fas fa-file-image icon-left"></i> design.jpg
+        <button class="delete-btn"><i class="fas fa-trash-alt"></i></button>
+      </li>
+      <li>
+        <i class="fas fa-file-word icon-left"></i> proposal.docx
+        <button class="delete-btn"><i class="fas fa-trash-alt"></i></button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="payment-status">
+  <h2><i class="fas fa-credit-card"></i> Payment Gateway Status</h2>
+  <div class="gateway-list">
+    <div class="gateway">
+      <i class="fab fa-cc-paypal gateway-icon"></i>
+      <div>
+        <h4>PayPal</h4>
+        <p class="status success"><i class="fas fa-check-circle"></i> Active</p>
+      </div>
+    </div>
+    
+    <div class="gateway">
+      <i class="fab fa-cc-stripe gateway-icon"></i>
+      <div>
+        <h4>Stripe</h4>
+        <p class="status success"><i class="fas fa-check-circle"></i> Active</p>
+      </div>
+    </div>
+    
+    <div class="gateway">
+      <i class="fab fa-cc-visa gateway-icon"></i>
+      <div>
+        <h4>Visa</h4>
+        <p class="status warning"><i class="fas fa-exclamation-triangle"></i> Delayed</p>
+      </div>
+    </div>
+    
+    <div class="gateway">
+      <i class="fab fa-cc-mastercard gateway-icon"></i>
+      <div>
+        <h4>Mastercard</h4>
+        <p class="status error"><i class="fas fa-times-circle"></i> Down</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="document-library">
+  <h2><i class="fas fa-folder-open"></i> Document Library</h2>
+  
+  <input type="text" id="docSearch" placeholder="Search documents..." />
+  
+  <ul class="doc-list">
+    <li><i class="fas fa-file-pdf"></i> Annual_Report_2024.pdf</li>
+    <li><i class="fas fa-file-word"></i> Project_Plan.docx</li>
+    <li><i class="fas fa-file-excel"></i> Budget.xlsx</li>
+    <li><i class="fas fa-file-alt"></i> Meeting_Notes.txt</li>
+    <li><i class="fas fa-file-powerpoint"></i> Presentation.pptx</li>
+    <li><i class="fas fa-file-image"></i> Design_Mockup.png</li>
+  </ul>
+</section>
+
+
+
+
+<section class="budget-planner">
+  <h2><i class="fas fa-wallet"></i> Budget Planner</h2>
+  
+  <form id="budgetForm" class="budget-form">
+    <input type="text" id="itemName" placeholder="Expense/Income Name" required />
+    <input type="number" id="itemAmount" placeholder="Amount ($)" required />
+    <select id="itemType" required>
+      <option value="" disabled selected>Select Type</option>
+      <option value="income">Income</option>
+      <option value="expense">Expense</option>
+    </select>
+    <button type="submit"><i class="fas fa-plus-circle"></i> Add</button>
+  </form>
+  
+  <ul class="budget-list"></ul>
+  
+  <div class="budget-summary">
+    <p>Total Income: <span id="totalIncome">$0</span></p>
+    <p>Total Expense: <span id="totalExpense">$0</span></p>
+    <p>Balance: <span id="balance">$0</span></p>
+  </div>
+</section>
+
+
+
+<section class="app-analytics">
+  <h2><i class="fas fa-mobile-alt"></i> Mobile App Analytics</h2>
+  
+  <div class="analytics-cards">
+    <div class="card">
+      <i class="fas fa-users"></i>
+      <h3>Active Users</h3>
+      <p id="activeUsers">5000</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-download"></i>
+      <h3>Downloads</h3>
+      <p id="downloads">2500</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-clock"></i>
+      <h3>Average Session</h3>
+      <p id="avgSession">35 min</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="workload-section">
+  <h2><i class="fas fa-tasks"></i> Workload Distribution</h2>
+  
+  <div class="workload-member">
+    <div class="member-info">
+      <i class="fas fa-user-circle"></i>
+      <span>Sarah</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress" style="width: 80%;">80%</div>
+    </div>
+  </div>
+  
+  <div class="workload-member">
+    <div class="member-info">
+      <i class="fas fa-user-circle"></i>
+      <span>Mohamed</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress" style="width: 55%;">55%</div>
+    </div>
+  </div>
+  
+  <div class="workload-member">
+    <div class="member-info">
+      <i class="fas fa-user-circle"></i>
+      <span>Rania</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress" style="width: 30%;">30%</div>
+    </div>
+  </div>
+</section>
+
+<section class="audit-trail">
+  <h2><i class="fas fa-clipboard-list"></i> Audit Trail</h2>
+  
+  <ul class="audit-list">
+    <li class="audit-entry">
+      <span>User <strong>Mohamed</strong> logged in at 10:00 AM</span>
+      <button class="delete-log"><i class="fas fa-trash-alt"></i> Delete</button>
+    </li>
+    <li class="audit-entry">
+      <span>User <strong>Admin</strong> updated settings at 11:30 AM</span>
+      <button class="delete-log"><i class="fas fa-trash-alt"></i> Delete</button>
+    </li>
+  </ul>
+</section>
+
+
+
+<section class="seo-dashboard">
+  <h2><i class="fas fa-search"></i> SEO Dashboard</h2>
+  
+  <div class="seo-metrics">
+    <div class="seo-box">
+      <i class="fas fa-globe"></i>
+      <div>
+        <h3>Domain Authority</h3>
+        <p>78 / 100</p>
+      </div>
+    </div>
+    
+    <div class="seo-box">
+      <i class="fas fa-link"></i>
+      <div>
+        <h3>Backlinks</h3>
+        <p>2,340</p>
+      </div>
+    </div>
+    
+    <div class="seo-box">
+      <i class="fas fa-eye"></i>
+      <div>
+        <h3>Organic Traffic</h3>
+        <p>5,200 Visits</p>
+      </div>
+    </div>
+    
+    <div class="seo-box">
+      <i class="fas fa-chart-line"></i>
+      <div>
+        <h3>Keyword Rankings</h3>
+        <p>132 Keywords</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Backup Manager Section -->
+<section class="backup-section">
+  <h2 class="section-title"><i class="fas fa-database"></i> Backup Manager</h2>
+
+  <div class="backup-header">
+    <button class="create-backup"><i class="fas fa-plus-circle"></i> Create New Backup</button>
+  </div>
+
+  <div class="backup-table">
+    <div class="backup-row header">
+      <span><i class="fas fa-calendar-alt"></i> Date</span>
+      <span><i class="fas fa-hdd"></i> Size</span>
+      <span><i class="fas fa-info-circle"></i> Status</span>
+      <span><i class="fas fa-cogs"></i> Actions</span>
+    </div>
+
+    <div class="backup-row">
+      <span>2025-08-02</span>
+      <span>120 MB</span>
+      <span class="status success"><i class="fas fa-check-circle"></i> Success</span>
+      <span class="actions">
+        <button class="download"><i class="fas fa-download"></i> Download</button>
+        <button class="restore"><i class="fas fa-undo-alt"></i> Restore</button>
+        <button class="delete"><i class="fas fa-trash-alt"></i> Delete</button>
+      </span>
+    </div>
+
+    <div class="backup-row">
+      <span>2025-07-30</span>
+      <span>110 MB</span>
+      <span class="status failed"><i class="fas fa-times-circle"></i> Failed</span>
+      <span class="actions">
+        <button class="download"><i class="fas fa-download"></i> Download</button>
+        <button class="restore"><i class="fas fa-undo-alt"></i> Restore</button>
+        <button class="delete"><i class="fas fa-trash-alt"></i> Delete</button>
+      </span>
+    </div>
+  </div>
+</section>
+
+
+<!-- Archive Section -->
+<section class="archive-section">
+  <h2 class="section-title"><i class="fas fa-archive"></i> Archive</h2>
+
+  <div class="archive-list">
+    <!-- Archive Item 1 -->
+    <div class="archive-item">
+      <div class="info">
+        <i class="fas fa-file-alt"></i>
+        <div>
+          <h3>Monthly Report - June</h3>
+          <span>Archived on: 2025-07-01</span>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="restore"><i class="fas fa-undo-alt"></i> Restore</button>
+        <button class="delete"><i class="fas fa-trash-alt"></i> Delete</button>
+      </div>
+    </div>
+
+    <!-- Archive Item 2 -->
+    <div class="archive-item">
+      <div class="info">
+        <i class="fas fa-image"></i>
+        <div>
+          <h3>Old Banner Design</h3>
+          <span>Archived on: 2025-06-15</span>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="restore"><i class="fas fa-undo-alt"></i> Restore</button>
+        <button class="delete"><i class="fas fa-trash-alt"></i> Delete</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- System Info Section -->
+<section class="system-info-section">
+  <h2 class="section-title"><i class="fas fa-info-circle"></i> System Info</h2>
+
+  <div class="info-grid">
+    <div class="info-item">
+      <i class="fas fa-microchip"></i>
+      <h3>CPU</h3>
+      <p>Intel Core i7-10700K</p>
+    </div>
+
+    <div class="info-item">
+      <i class="fas fa-memory"></i>
+      <h3>RAM</h3>
+      <p>16 GB DDR4</p>
+    </div>
+
+    <div class="info-item">
+      <i class="fas fa-hdd"></i>
+      <h3>Storage</h3>
+      <p>512 GB SSD</p>
+    </div>
+
+    <div class="info-item">
+      <i class="fas fa-network-wired"></i>
+      <h3>Network</h3>
+      <p>Ethernet 1 Gbps</p>
+    </div>
+
+    <div class="info-item">
+      <i class="fas fa-video"></i>
+      <h3>GPU</h3>
+      <p>NVIDIA RTX 3060</p>
+    </div>
+
+    <div class="info-item">
+      <i class="fas fa-server"></i>
+      <h3>OS</h3>
+      <p>Windows 11 Pro</p>
+    </div>
+  </div>
+</section>
+
+<!-- Meta Tags Manager Section -->
+<section class="meta-tags-manager">
+  <h2 class="section-title"><i class="fas fa-tags"></i> Meta Tags Manager</h2>
+
+  <form class="meta-form">
+    <div class="form-group">
+      <label for="meta-title"><i class="fas fa-heading"></i> Meta Title</label>
+      <input type="text" id="meta-title" placeholder="Enter meta title" />
+    </div>
+
+    <div class="form-group">
+      <label for="meta-description"><i class="fas fa-align-left"></i> Meta Description</label>
+      <textarea id="meta-description" rows="3" placeholder="Enter meta description"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="meta-keywords"><i class="fas fa-key"></i> Meta Keywords</label>
+      <input type="text" id="meta-keywords" placeholder="Enter keywords separated by commas" />
+    </div>
+
+    <button type="submit" class="save-btn"><i class="fas fa-save"></i> Save Meta Tags</button>
+  </form>
+</section>
+
+<!-- Ticket Analytics Section -->
+<section class="ticket-analytics">
+  <h2 class="section-title"><i class="fas fa-ticket-alt"></i> Ticket Analytics</h2>
+  
+  <div class="analytics-cards">
+    <div class="card">
+      <i class="fas fa-ticket-alt"></i>
+      <h3>Total Tickets</h3>
+      <p>1,245</p>
+    </div>
+    
+    <div class="card">
+      <i class="fas fa-check-circle"></i>
+      <h3>Resolved</h3>
+      <p>1,030</p>
+    </div>
+    
+    <div class="card">
+      <i class="fas fa-spinner"></i>
+      <h3>Pending</h3>
+      <p>150</p>
+    </div>
+    
+    <div class="card">
+      <i class="fas fa-times-circle"></i>
+      <h3>Rejected</h3>
+      <p>65</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Drag and Drop Files Section -->
+<section class="drag-drop-files">
+  <h2 class="section-title"><i class="fas fa-file-upload"></i> Drag and Drop Files</h2>
+  
+  <div class="drop-zone" id="dropZone">
+    <p>Drag & drop your files here, or click to select files</p>
+    <input type="file" id="fileInput" multiple hidden />
+  </div>
+  
+  <ul class="file-list" id="fileList"></ul>
+</section>
+
+
+<!-- Developer Tools Section -->
+<section class="developer-tools">
+  <h2 class="section-title"><i class="fas fa-tools"></i> Developer Tools</h2>
+  
+  <ul class="tools-list">
+    <li><i class="fas fa-code"></i> Code Editor</li>
+    <li><i class="fas fa-bug"></i> Debugger</li>
+    <li><i class="fas fa-server"></i> API Tester</li>
+    <li><i class="fas fa-database"></i> Database Manager</li>
+    <li><i class="fas fa-terminal"></i> Terminal</li>
+    <li><i class="fas fa-cogs"></i> Build Tools</li>
+  </ul>
+</section>
+
+
+
+<!-- Device Crash Stats Section -->
+<section class="device-crash-stats">
+  <h2 class="section-title"><i class="fas fa-mobile-alt"></i> Device Crash Stats</h2>
+  
+  <div class="stats-grid">
+    <div class="stat-box">
+      <i class="fas fa-android"></i>
+      <h3>Android</h3>
+      <p>Crash Rate: <strong>3.2%</strong></p>
+    </div>
+    
+    <div class="stat-box">
+      <i class="fab fa-apple"></i>
+      <h3>iOS</h3>
+      <p>Crash Rate: <strong>1.8%</strong></p>
+    </div>
+    
+    <div class="stat-box">
+      <i class="fas fa-tablet-alt"></i>
+      <h3>Tablet</h3>
+      <p>Crash Rate: <strong>2.5%</strong></p>
+    </div>
+    
+    <div class="stat-box">
+      <i class="fas fa-laptop"></i>
+      <h3>Desktop</h3>
+      <p>Crash Rate: <strong>0.9%</strong></p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Influencer Tracker Section -->
+<section class="influencer-tracker">
+  <h2 class="section-title"><i class="fas fa-user-friends"></i> Influencer Tracker</h2>
+  
+  <div class="influencer-grid">
+    <div class="influencer-box">
+      <i class="fas fa-user-astronaut icon"></i>
+      <h3>@techqueen</h3>
+      <p>Followers: <strong>1.2M</strong></p>
+      <p>Engagement: <strong>8.5%</strong></p>
+    </div>
+    
+    <div class="influencer-box">
+      <i class="fas fa-user-ninja icon"></i>
+      <h3>@dev_guru</h3>
+      <p>Followers: <strong>870K</strong></p>
+      <p>Engagement: <strong>6.3%</strong></p>
+    </div>
+    
+    <div class="influencer-box">
+      <i class="fas fa-user-secret icon"></i>
+      <h3>@uiwizard</h3>
+      <p>Followers: <strong>450K</strong></p>
+      <p>Engagement: <strong>9.1%</strong></p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Roadmap Viewer Section -->
+<section class="roadmap-viewer">
+  <h2 class="roadmap-viewer-title"><i class="fas fa-map-signs"></i> Roadmap Viewer</h2>
+  
+  <div class="roadmap-viewer-timeline">
+    <div class="roadmap-step">
+      <i class="fas fa-lightbulb"></i>
+      <div>
+        <h3>Idea Phase</h3>
+        <p>Gathering ideas and feedback from users.</p>
+      </div>
+    </div>
+    
+    <div class="roadmap-step">
+      <i class="fas fa-code"></i>
+      <div>
+        <h3>Development</h3>
+        <p>Features are being actively developed.</p>
+      </div>
+    </div>
+    
+    <div class="roadmap-step">
+      <i class="fas fa-vial"></i>
+      <div>
+        <h3>Testing</h3>
+        <p>QA testing and bug fixing phase.</p>
+      </div>
+    </div>
+    
+    <div class="roadmap-step">
+      <i class="fas fa-rocket"></i>
+      <div>
+        <h3>Launch</h3>
+        <p>Final release and deployment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Compliance Checker Section -->
+<section class="compliance-checker">
+  <h2 class="compliance-checker-title"><i class="fas fa-check-circle"></i> Compliance Checker</h2>
+  
+  <div class="compliance-checker-list">
+    <div class="compliance-item">
+      <i class="fas fa-shield-alt compliance-icon"></i>
+      <div>
+        <h3>Security Standards</h3>
+        <p>Ensure your platform meets the latest security protocols.</p>
+      </div>
+    </div>
+    
+    <div class="compliance-item">
+      <i class="fas fa-balance-scale compliance-icon"></i>
+      <div>
+        <h3>Legal Compliance</h3>
+        <p>Verify all operations comply with applicable laws and regulations.</p>
+      </div>
+    </div>
+    
+    <div class="compliance-item">
+      <i class="fas fa-file-contract compliance-icon"></i>
+      <div>
+        <h3>Audit Trails</h3>
+        <p>Maintain records for all compliance-related activities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Deployment Logs Section -->
+<section class="deployment-logs">
+  <h2 class="deployment-logs-title"><i class="fas fa-server"></i> Deployment Logs</h2>
+  
+  <div class="deployment-logs-list">
+    <div class="log-entry success">
+      <i class="fas fa-check-circle"></i>
+      <div>
+        <h3>v2.1.0 Deployed</h3>
+        <p>Deployed on: 2025-07-28 14:30 • Status: Successful</p>
+      </div>
+    </div>
+    
+    <div class="log-entry warning">
+      <i class="fas fa-exclamation-circle"></i>
+      <div>
+        <h3>v2.0.9 Deployed</h3>
+        <p>Deployed on: 2025-07-20 11:15 • Status: Warning: Slow response</p>
+      </div>
+    </div>
+    
+    <div class="log-entry error">
+      <i class="fas fa-times-circle"></i>
+      <div>
+        <h3>v2.0.8 Failed</h3>
+        <p>Deployed on: 2025-07-12 09:00 • Status: Failed: Build Error</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- User Surveys Section -->
+<section class="user-surveys">
+  <h2 class="user-surveys-title"><i class="fas fa-poll"></i> User Surveys</h2>
+  
+  <div class="survey-list">
+    <div class="survey-item">
+      <i class="fas fa-question-circle survey-icon"></i>
+      <div>
+        <h3>Customer Satisfaction</h3>
+        <p>Survey on user satisfaction with our product features.</p>
+      </div>
+    </div>
+    
+    <div class="survey-item">
+      <i class="fas fa-users survey-icon"></i>
+      <div>
+        <h3>New Feature Feedback</h3>
+        <p>Collect feedback on recently launched features.</p>
+      </div>
+    </div>
+    
+    <div class="survey-item">
+      <i class="fas fa-chart-line survey-icon"></i>
+      <div>
+        <h3>Market Research</h3>
+        <p>Understand market trends and customer preferences.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- User Flow Visualizer Section -->
+<section class="user-flow-visualizer">
+  <h2 class="user-flow-visualizer-title"><i class="fas fa-project-diagram"></i> User Flow Visualizer</h2>
+  
+  <div class="flow-stages">
+    <div class="flow-step">
+      <i class="fas fa-sign-in-alt"></i>
+      <div>
+        <h3>Login</h3>
+        <p>User starts by logging into the dashboard.</p>
+      </div>
+    </div>
+    
+    <div class="flow-step">
+      <i class="fas fa-home"></i>
+      <div>
+        <h3>Homepage</h3>
+        <p>Navigation through main features and stats.</p>
+      </div>
+    </div>
+    
+    <div class="flow-step">
+      <i class="fas fa-cogs"></i>
+      <div>
+        <h3>Settings</h3>
+        <p>User customizes their experience and preferences.</p>
+      </div>
+    </div>
+    
+    <div class="flow-step">
+      <i class="fas fa-sign-out-alt"></i>
+      <div>
+        <h3>Logout</h3>
+        <p>Session ends and user logs out safely.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Brand Sentiment Overview Section -->
+<section class="brand-sentiment-overview">
+  <h2 class="brand-sentiment-overview-title"><i class="fas fa-smile-beam"></i> Brand Sentiment Overview</h2>
+  
+  <div class="sentiment-stats">
+    <div class="sentiment positive">
+      <i class="fas fa-thumbs-up"></i>
+      <div>
+        <h3>Positive</h3>
+        <p>65% Customers feel happy with our brand.</p>
+      </div>
+    </div>
+    
+    <div class="sentiment neutral">
+      <i class="fas fa-meh"></i>
+      <div>
+        <h3>Neutral</h3>
+        <p>20% Customers are indifferent or undecided.</p>
+      </div>
+    </div>
+    
+    <div class="sentiment negative">
+      <i class="fas fa-thumbs-down"></i>
+      <div>
+        <h3>Negative</h3>
+        <p>15% Customers expressed dissatisfaction.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Affiliate Dashboard Section -->
+<section class="affiliate-dashboard">
+  <h2 class="affiliate-dashboard-title"><i class="fas fa-handshake"></i> Affiliate Dashboard</h2>
+  
+  <div class="affiliate-stats">
+    <div class="affiliate-card">
+      <i class="fas fa-user-plus"></i>
+      <div>
+        <h3>Total Affiliates</h3>
+        <p>124 Active Partners</p>
+      </div>
+    </div>
+    
+    <div class="affiliate-card">
+      <i class="fas fa-dollar-sign"></i>
+      <div>
+        <h3>Commission Earned</h3>
+        <p>$8,250 This Month</p>
+      </div>
+    </div>
+    
+    <div class="affiliate-card">
+      <i class="fas fa-chart-line"></i>
+      <div>
+        <h3>Conversion Rate</h3>
+        <p>7.8% Over the last 30 days</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Status Page Integration Section -->
+<section class="status-page-integration">
+  <h2 class="status-page-integration-title"><i class="fas fa-plug"></i> Status Page Integration</h2>
+  
+  <div class="status-services">
+    <div class="status-service online">
+      <i class="fas fa-server"></i>
+      <div>
+        <h3>API Server</h3>
+        <p>Status: Online</p>
+      </div>
+    </div>
+    
+    <div class="status-service maintenance">
+      <i class="fas fa-tools"></i>
+      <div>
+        <h3>Database</h3>
+        <p>Status: Scheduled Maintenance</p>
+      </div>
+    </div>
+    
+    <div class="status-service offline">
+      <i class="fas fa-exclamation-triangle"></i>
+      <div>
+        <h3>Email Service</h3>
+        <p>Status: Offline</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Social Mentions Tracker Section -->
+<section class="social-mentions-tracker">
+  <h2 class="social-mentions-tracker-title"><i class="fas fa-hashtag"></i> Social Mentions Tracker</h2>
+  
+  <div class="social-mentions">
+    <div class="mention twitter">
+      <i class="fab fa-twitter"></i>
+      <div>
+        <h3>Twitter</h3>
+        <p>134 mentions this week</p>
+      </div>
+    </div>
+    
+    <div class="mention facebook">
+      <i class="fab fa-facebook-f"></i>
+      <div>
+        <h3>Facebook</h3>
+        <p>87 mentions this week</p>
+      </div>
+    </div>
+    
+    <div class="mention instagram">
+      <i class="fab fa-instagram"></i>
+      <div>
+        <h3>Instagram</h3>
+        <p>102 mentions this week</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Feedback Widgets Section -->
+<section class="feedback-widgets">
+  <h2 class="feedback-widgets-title"><i class="fas fa-comments"></i> Feedback Widgets</h2>
+  
+  <div class="widgets-list">
+    <div class="widget">
+      <i class="fas fa-star"></i>
+      <div>
+        <h3>Customer Ratings</h3>
+        <p>4.8 / 5 Average Rating</p>
+      </div>
+    </div>
+    
+    <div class="widget">
+      <i class="fas fa-pencil-alt"></i>
+      <div>
+        <h3>Text Reviews</h3>
+        <p>125 Detailed Reviews</p>
+      </div>
+    </div>
+    
+    <div class="widget">
+      <i class="fas fa-thumbs-up"></i>
+      <div>
+        <h3>Positive Feedback</h3>
+        <p>95% Positive Responses</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Completion Percentage per Task Section -->
+<section class="task-completion">
+  <h2 class="task-completion-title"><i class="fas fa-tasks"></i> Completion Percentage per Task</h2>
+  
+  <div class="task-list">
+    <div class="task-item">
+      <i class="fas fa-check-circle"></i>
+      <div>
+        <h3>Design Homepage</h3>
+        <p>80% Completed</p>
+      </div>
+    </div>
+    
+    <div class="task-item">
+      <i class="fas fa-code"></i>
+      <div>
+        <h3>Develop API</h3>
+        <p>55% Completed</p>
+      </div>
+    </div>
+    
+    <div class="task-item">
+      <i class="fas fa-bug"></i>
+      <div>
+        <h3>Bug Fixing</h3>
+        <p>90% Completed</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Experiment Switches Section -->
+<section class="experiment-switches">
+  <h2 class="experiment-switches-title"><i class="fas fa-vials"></i> Experiment Switches</h2>
+  
+  <div class="experiment-list">
+    <div class="experiment-item">
+      <i class="fas fa-flask"></i>
+      <div class="experiment-info">
+        <h3>New UI Layout</h3>
+        <p>Enable the updated layout experiment</p>
+      </div>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
+    </div>
+    
+    <div class="experiment-item">
+      <i class="fas fa-robot"></i>
+      <div class="experiment-info">
+        <h3>AI Assistant</h3>
+        <p>Toggle smart assistant suggestions</p>
+      </div>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+    
+    <div class="experiment-item">
+      <i class="fas fa-sync-alt"></i>
+      <div class="experiment-info">
+        <h3>Auto Refresh</h3>
+        <p>Automatically refresh dashboard data</p>
+      </div>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- SSL Certificate Status Section -->
+<section class="ssl-status">
+  <h2 class="ssl-status-title"><i class="fas fa-lock"></i> SSL Certificate Status</h2>
+  
+  <div class="ssl-info">
+    <div class="ssl-item">
+      <i class="fas fa-certificate"></i>
+      <div>
+        <h3>Domain</h3>
+        <p>example.com</p>
+      </div>
+    </div>
+    
+    <div class="ssl-item">
+      <i class="fas fa-calendar-alt"></i>
+      <div>
+        <h3>Expiration Date</h3>
+        <p>Dec 30, 2025</p>
+      </div>
+    </div>
+    
+    <div class="ssl-item">
+      <i class="fas fa-shield-alt"></i>
+      <div>
+        <h3>Status</h3>
+        <p style="color: green;">Valid</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Dev/Test/Prod Switcher Section -->
+<section class="env-switcher">
+  <h2 class="env-switcher-title"><i class="fas fa-toggle-on"></i> Dev/Test/Prod Switcher</h2>
+  
+  <div class="env-options">
+    <!-- أضف هذا العنصر تحت div.env-options -->
+<p class="env-status-message">Current Environment: <strong>Development</strong></p>
+    <label class="env-option">
+      <input type="radio" name="environment" value="dev" checked>
+      <i class="fas fa-code"></i>
+      <span>Development</span>
+    </label>
+    
+    <label class="env-option">
+      <input type="radio" name="environment" value="test">
+      <i class="fas fa-vial"></i>
+      <span>Testing</span>
+    </label>
+    
+    <label class="env-option">
+      <input type="radio" name="environment" value="prod">
+      <i class="fas fa-server"></i>
+      <span>Production</span>
+    </label>
+  </div>
+</section>
+
+<!-- Affiliate Metrics Section -->
+<section class="affiliate-metrics">
+  <h2 class="affiliate-metrics-title"><i class="fas fa-chart-line"></i> Affiliate Metrics</h2>
+  
+  <div class="metrics-container">
+    <div class="metric-item">
+      <i class="fas fa-user-friends"></i>
+      <div>
+        <h3>New Affiliates</h3>
+        <p>120</p>
+      </div>
+    </div>
+    
+    <div class="metric-item">
+      <i class="fas fa-dollar-sign"></i>
+      <div>
+        <h3>Commission Earned</h3>
+        <p>$3,450</p>
+      </div>
+    </div>
+    
+    <div class="metric-item">
+      <i class="fas fa-bullseye"></i>
+      <div>
+        <h3>Conversion Rate</h3>
+        <p>8.5%</p>
+      </div>
+    </div>
+    
+    <div class="metric-item">
+      <i class="fas fa-chart-pie"></i>
+      <div>
+        <h3>Traffic Sources</h3>
+        <p>Organic 55%</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Plan Tiers Overview Section with many icons -->
+<section class="plan-tiers-overview">
+  <h2 class="plan-tiers-overview-title"><i class="fas fa-layer-group"></i> Plan Tiers Overview</h2>
+  
+  <div class="tiers-container">
+    <!-- Basic Plan -->
+    <div class="tier-item">
+      <i class="fas fa-star"></i>
+      <div>
+        <h3>Basic Plan</h3>
+        <p>$9.99 / month</p>
+        <ul class="features-list">
+          <li><i class="fas fa-check-circle"></i> 5 Projects</li>
+          <li><i class="fas fa-check-circle"></i> 10 GB Storage</li>
+          <li><i class="fas fa-check-circle"></i> Basic Support</li>
+          <li><i class="fas fa-check-circle"></i> Limited Analytics</li>
+          <li><i class="fas fa-check-circle"></i> Single User</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Pro Plan -->
+    <div class="tier-item">
+      <i class="fas fa-gem"></i>
+      <div>
+        <h3>Pro Plan</h3>
+        <p>$29.99 / month</p>
+        <ul class="features-list">
+          <li><i class="fas fa-check-circle"></i> 50 Projects</li>
+          <li><i class="fas fa-check-circle"></i> 100 GB Storage</li>
+          <li><i class="fas fa-check-circle"></i> Priority Support</li>
+          <li><i class="fas fa-check-circle"></i> Advanced Analytics</li>
+          <li><i class="fas fa-check-circle"></i> Multi Users</li>
+          <li><i class="fas fa-check-circle"></i> API Access</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Enterprise Plan -->
+    <div class="tier-item">
+      <i class="fas fa-crown"></i>
+      <div>
+        <h3>Enterprise Plan</h3>
+        <p>Contact us</p>
+        <ul class="features-list">
+          <li><i class="fas fa-check-circle"></i> Unlimited Projects</li>
+          <li><i class="fas fa-check-circle"></i> Unlimited Storage</li>
+          <li><i class="fas fa-check-circle"></i> Dedicated Support</li>
+          <li><i class="fas fa-check-circle"></i> Custom Analytics</li>
+          <li><i class="fas fa-check-circle"></i> Unlimited Users</li>
+          <li><i class="fas fa-check-circle"></i> Onboarding Assistance</li>
+          <li><i class="fas fa-check-circle"></i> SLA Guarantee</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="contact-section">
+  <h2 class="contact-section-title"><i class="fas fa-envelope"></i> Contact Us</h2>
+  
+  <form class="contact-form">
+    <div class="form-group">
+      <label for="name"><i class="fas fa-user"></i> Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" />
+    </div>
+    
+    <div class="form-group">
+      <label for="email"><i class="fas fa-envelope"></i> Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" />
+    </div>
+    
+    <div class="form-group">
+      <label for="message"><i class="fas fa-comment-dots"></i> Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here"></textarea>
+    </div>
+    
+    <button type="submit" class="submit-btn">Send Message</button>
+  </form>
+</section>
+
+
+
+
+
+<footer class="dashboard-footer">
+  <div class="footer-columns">
+    <div class="footer-col">
+      <h3><i class="fas fa-th-large"></i> Sections</h3>
+      <ul>
+        <li><a href="#overview"><i class="fas fa-home"></i> Overview</a></li>
+        <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
+        <li><a href="#team"><i class="fas fa-users"></i> Team</a></li>
+        <li><a href="#tasks"><i class="fas fa-tasks"></i> Tasks</a></li>
+        <li><a href="#calendar"><i class="fas fa-calendar-alt"></i> Calendar</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-col">
+      <h3><i class="fas fa-chart-pie"></i> Analytics</h3>
+      <ul>
+        <li><a href="#performance"><i class="fas fa-chart-line"></i> Performance</a></li>
+        <li><a href="#seo"><i class="fas fa-search"></i> SEO</a></li>
+        <li><a href="#budget"><i class="fas fa-wallet"></i> Budget</a></li>
+        <li><a href="#traffic"><i class="fas fa-traffic-light"></i> Traffic</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-col">
+      <h3><i class="fas fa-cogs"></i> Settings</h3>
+      <ul>
+        <li><a href="#profile"><i class="fas fa-user-cog"></i> Profile</a></li>
+        <li><a href="#notifications"><i class="fas fa-bell"></i> Notifications</a></li>
+        <li><a href="#security"><i class="fas fa-lock"></i> Security</a></li>
+        <li><a href="#support"><i class="fas fa-life-ring"></i> Support</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2025 Mohamed Dashboard. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
